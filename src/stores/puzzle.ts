@@ -12,7 +12,7 @@ function updateMap(
         case '▢':
             puzzleMap[row][col].isOn = !puzzleMap[row][col].isOn
             break;
-        case '一':
+        case '—':
             for (let index = 0; index < puzzleMap[row].length; index++) {
                 puzzleMap[row][index].isOn = !puzzleMap[row][index].isOn
             }
@@ -149,29 +149,29 @@ const puzzleMaps: {[key: string]: {symbol: string; isOn: boolean;}[][];} = {
     ],
     '2': [
         [{'symbol': '▢', 'isOn': true}, {'symbol': '▢', 'isOn': true}, {'symbol': '◁', 'isOn': true}, {'symbol': '▢', 'isOn': true}],
-        [{'symbol': '▢', 'isOn': true}, {'symbol': '▷', 'isOn': true}, {'symbol': '▢', 'isOn': true}, {'symbol': '一', 'isOn': true}],
-        [{'symbol': '▷', 'isOn': true}, {'symbol': '◁', 'isOn': false}, {'symbol': '丨', 'isOn': true}, {'symbol': '一', 'isOn': true}],
-        [{'symbol': '▢', 'isOn': false}, {'symbol': '▢', 'isOn': true}, {'symbol': '▷', 'isOn': true}, {'symbol': '一', 'isOn': true}],
+        [{'symbol': '▢', 'isOn': true}, {'symbol': '▷', 'isOn': true}, {'symbol': '▢', 'isOn': true}, {'symbol': '—', 'isOn': true}],
+        [{'symbol': '▷', 'isOn': true}, {'symbol': '◁', 'isOn': false}, {'symbol': '丨', 'isOn': true}, {'symbol': '—', 'isOn': true}],
+        [{'symbol': '▢', 'isOn': false}, {'symbol': '▢', 'isOn': true}, {'symbol': '▷', 'isOn': true}, {'symbol': '—', 'isOn': true}],
     ],
     '3': [
         [{'symbol': '丨', 'isOn': true}, {'symbol': '丨', 'isOn': true}, {'symbol': '▢', 'isOn': true}, {'symbol': '▢', 'isOn': false}],
-        [{'symbol': '丨', 'isOn': false}, {'symbol': '▢', 'isOn': true}, {'symbol': '一', 'isOn': false}, {'symbol': '▢', 'isOn': true}],
+        [{'symbol': '丨', 'isOn': false}, {'symbol': '▢', 'isOn': true}, {'symbol': '—', 'isOn': false}, {'symbol': '▢', 'isOn': true}],
         [{'symbol': '▢', 'isOn': false}, {'symbol': '×', 'isOn': true}, {'symbol': '▷', 'isOn': true}, {'symbol': '▢', 'isOn': true}],
         [{'symbol': '+', 'isOn': true}, {'symbol': '◁', 'isOn': false}, {'symbol': '▷', 'isOn': false}, {'symbol': '▢', 'isOn': true}],
     ],
     '4': [
-        [{'symbol': '▷', 'isOn': true}, {'symbol': '▢', 'isOn': true}, {'symbol': '一', 'isOn': false}, {'symbol': '▢', 'isOn': true}, {'symbol': '◁', 'isOn': true}],
+        [{'symbol': '▷', 'isOn': true}, {'symbol': '▢', 'isOn': true}, {'symbol': '—', 'isOn': false}, {'symbol': '▢', 'isOn': true}, {'symbol': '◁', 'isOn': true}],
         [{'symbol': '▢', 'isOn': true}, {'symbol': '◁', 'isOn': true}, {'symbol': '+', 'isOn': true}, {'symbol': '▷', 'isOn': true}, {'symbol': '▢', 'isOn': true}],
         [{'symbol': '丨', 'isOn': true}, {'symbol': '+', 'isOn': true}, {'symbol': '×', 'isOn': false}, {'symbol': '+', 'isOn': true}, {'symbol': '丨', 'isOn': true}],
         [{'symbol': '▢', 'isOn': true}, {'symbol': '◁', 'isOn': true}, {'symbol': '+', 'isOn': true}, {'symbol': '▷', 'isOn': true}, {'symbol': '▢', 'isOn': true}],
-        [{'symbol': '▷', 'isOn': true}, {'symbol': '▢', 'isOn': true}, {'symbol': '一', 'isOn': true}, {'symbol': '▢', 'isOn': true}, {'symbol': '◁', 'isOn': false}],
+        [{'symbol': '▷', 'isOn': true}, {'symbol': '▢', 'isOn': true}, {'symbol': '—', 'isOn': true}, {'symbol': '▢', 'isOn': true}, {'symbol': '◁', 'isOn': false}],
     ],
     '5': [
-        [{'symbol': '▢', 'isOn': true}, {'symbol': '一', 'isOn': true}, {'symbol': '丨', 'isOn': true}, {'symbol': '▷', 'isOn': true}, {'symbol': '◁', 'isOn': true}],
-        [{'symbol': '×', 'isOn': true}, {'symbol': '+', 'isOn': true}, {'symbol': '▢', 'isOn': true}, {'symbol': '一', 'isOn': true}, {'symbol': '丨', 'isOn': true}],
+        [{'symbol': '▢', 'isOn': true}, {'symbol': '—', 'isOn': true}, {'symbol': '丨', 'isOn': true}, {'symbol': '▷', 'isOn': true}, {'symbol': '◁', 'isOn': true}],
+        [{'symbol': '×', 'isOn': true}, {'symbol': '+', 'isOn': true}, {'symbol': '▢', 'isOn': true}, {'symbol': '—', 'isOn': true}, {'symbol': '丨', 'isOn': true}],
         [{'symbol': '▷', 'isOn': true}, {'symbol': '◁', 'isOn': true}, {'symbol': '×', 'isOn': true}, {'symbol': '+', 'isOn': false}, {'symbol': '▢', 'isOn': true}],
-        [{'symbol': '一', 'isOn': true}, {'symbol': '丨', 'isOn': true}, {'symbol': '▷', 'isOn': false}, {'symbol': '◁', 'isOn': true}, {'symbol': '×', 'isOn': true}],
-        [{'symbol': '+', 'isOn': false}, {'symbol': '▢', 'isOn': true}, {'symbol': '一', 'isOn': true}, {'symbol': '丨', 'isOn': true}, {'symbol': '▷', 'isOn': true}],
+        [{'symbol': '—', 'isOn': true}, {'symbol': '丨', 'isOn': true}, {'symbol': '▷', 'isOn': false}, {'symbol': '◁', 'isOn': true}, {'symbol': '×', 'isOn': true}],
+        [{'symbol': '+', 'isOn': false}, {'symbol': '▢', 'isOn': true}, {'symbol': '—', 'isOn': true}, {'symbol': '丨', 'isOn': true}, {'symbol': '▷', 'isOn': true}],
     ]
 }
 
